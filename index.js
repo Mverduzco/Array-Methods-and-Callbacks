@@ -80,7 +80,7 @@ function getWinnersByYear(data, getFinalsCB, getYearsCB, getWinnersCB){
     const years = getYearsCB(data, getFinals);
     return winners.map((item, index)=> `In ${years[index]}, ${item} won the world cup!`)
 }
-
+console.log(getWinnersByYear(fifaData, getFinals, getYears, getWinners));
 
 
 
